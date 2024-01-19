@@ -1,0 +1,26 @@
+#https://hyperglass.dev/docs/commands
+linux_comando_personlizado:
+  ipv4_default:
+    bgp_route: 'echo bgp_route "{target}"'
+    bgp_aspath: 'echo bgp_aspath "{target}"'
+    bgp_community: 'echo bgp_community "{target}"'
+    ping: 'ping -c 4 "{target}"'
+    traceroute: 'traceroute -n "{target}"'
+  ipv6_default:
+    bgp_route: 'echo "{target}"'
+    bgp_aspath: 'echo "{target}"'
+    bgp_community: 'echo "{target}"'
+    ping: 'echo "{target}"'
+    traceroute: 'echo "{target}"'
+  ipv4_vpn:
+    bgp_route: 'echo "{vrf} {target}"'
+    bgp_aspath: 'echo "{vrf} {target}"'
+    bgp_community: 'echo "{vrf} {target}"'
+    ping: 'echo "{vrf} {target}"'
+    traceroute: 'echo "{vrf} {target}"'
+  ipv6_vpn:
+    bgp_route: 'echo "{vrf} {target}"'
+    bgp_aspath: 'echo "{vrf} {target}"'
+    bgp_community: 'echo "{vrf} {target}"'
+    ping: 'echo "{vrf} {target}"'
+    traceroute: 'echo "{vrf} {target}"'

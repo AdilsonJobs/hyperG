@@ -1,0 +1,38 @@
+# https://hyperglass.dev/docs/adding-devices
+routers:
+  - name: 1Equinix MI3 - Boca Raton
+    address: 170.238.232.192
+    network:
+      name: RT_NCE1_MI3_BCA
+      display_name: RT_NCE1_MI3_BCA
+    credential:
+      username: frederico.oliveira
+      password: 239507/Astr23
+    port: 22
+    driver: "scrapli"
+    nos: juniper_junos
+    vrfs:
+      - name: global
+        default: true
+        ipv4:
+          source_address: 170.238.232.192
+        ipv6:
+         source_address: 2804:3674:0:a:170:238:232:192
+# https://hyperglass.dev/docs/adding-devices
+routers:
+  - name:  Looking Glass
+    address: 197.149.148.99
+    network:
+      name: Looking Glass
+      display_name: Looking
+    credential:
+      username: adilson.camenha
+      password: EngAng2024.#IPAccess
+    port: 22
+    driver: "scrapli"
+    nos: juniper_junos
+    vrfs:
+      - name: global
+        default: true
+        ipv4:
+          source_address: 197.149.148.99

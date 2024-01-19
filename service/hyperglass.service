@@ -1,0 +1,17 @@
+
+[Unit]
+Description=hyperglass
+After=network.target
+Requires=redis-server.service
+ 
+[Service]
+User=root
+Group=root
+ExecStart=/usr/local/bin/hyperglass start
+ExecStop=/usr/bin/pkill -f hyperglass
+ 
+TimeoutStartSec=120
+TimeoutStopSec=300
+ 
+[Install]
+WantedBy=multi-user.target
